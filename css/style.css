@@ -51,6 +51,12 @@ h6 {
 	color: #fff;
 }
 
+
+h4 {
+    color: black;
+    text-align: left;
+}
+
 h1.h-xlight,h2.h-xlight,h3.h-xlight ,h4.h-xlight ,h5.h-xlight ,h6.h-xlight  {
 	font-weight: 200;
 }
@@ -901,10 +907,16 @@ a.btn:focus{
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid #2b292a;
     outline: 0;
-    color: #000;
-    background-color: #28c3ab;
+    color: #ffffff;
+    background-color: #2b292a;
+}
+.btn-default {
+    border: 1px solid #4D4B4C;
+    outline: 0;
+    color: #ffffff;
+    background-color: #4D4B4C;
 }
 
 .btn-huge {

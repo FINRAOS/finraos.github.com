@@ -1,0 +1,532 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FINRA OS - Events</title>
+    <!--<link rel="shortcut icon" href="../../assets/ico/favicon.ico">-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <script src="js/jquery.min.js"></script>
+    <style type="text/css">
+        body {
+            background-color: white;
+            padding-top: 10px;
+        }
+
+        .hr1 {
+            background-color: rgb(96, 156, 210);
+            height: 3px;
+            margin: 0;
+        }
+
+        .navbar-static-top {
+            margin-bottom: 0px;
+        }
+
+        .navbar-inner {
+            max-width: 970px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 1);
+            border-bottom: 2px solid rgba(96, 156, 210, 1);
+        }
+
+        .navbar-brand {
+            line-height: 42px;
+            padding: 5px 0 5px 5px;
+            margin: 0;
+        }
+
+        .navbar-nav {
+            margin: 28px 0 0px 0;
+        }
+
+        .navbar-nav > li > a {
+            margin: 0 10px 10px 10px;
+            padding: 10px;
+            color: rgb(40, 95, 145);
+            line-height: 13px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            background-color: rgb(96, 156, 210);
+            color: white;
+        }
+
+        .navbar-toggle {
+            padding: 5px;
+            margin: 20px 30px 0 0;
+            height: 40px;
+        }
+
+        .navbar-header button {
+            background-color: rgb(96, 156, 210);
+        }
+
+        .navbar-header span {
+            color: white;
+            font-size: 20px;
+        }
+
+        .list-group a {
+            color: rgb(40, 95, 145);
+            font-size: 14px;
+        }
+
+        .f1 {
+            margin: 0 auto;
+            padding: 0;
+            background-color: white;
+        }
+
+        .f2 {
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .f3 {
+            margin: 10px 0;
+            background-color: white;
+        }
+
+        .f4 {
+            background-color: rgb(96, 156, 210);
+            margin: 10px 30px 10px 30px;
+            padding: 12px 20px;
+        }
+
+        .container {
+            padding: 0 auto;
+        }
+
+        .jumbotron p {
+            font-size: 13px;
+        }
+
+        .jumbotron h3 {
+            color: rgb(66, 139, 202);
+            font-size: 20px;
+        }
+
+        .container-fluid h2 {
+            color: white;
+            font-size: 22px;
+            margin: auto 0;
+        }
+
+        .list-group span {
+            background-color: rgb(96, 156, 210);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border: 0;
+        }
+
+        .list-group a {
+            font-size: 12px;
+        }
+
+        .container .jumbotron {
+            padding: 10px 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+        }
+
+        .container-fluid {
+            max-width: 1000px;
+        }
+
+        .collapse {
+            display: block;
+        }
+    </style>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js',
+                'ga');
+
+        ga('create', 'UA-47319751-2', 'finraos.github.io');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- ENABLE EVENTS -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push([ '_setAccount', 'UA-47319751-2' ]);
+        _gaq.push([ '_trackPageview' ]);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                    : 'http://www')
+                    + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+
+<div class="f1 container ">
+<div class="container-fluid">
+<div class="row row-offcanvas">
+<div class="col-12">
+<div class="f2 jumbotron">
+<div class="jumbotron" style="background-color:dodgerblue; color:white;">
+    <h1>DataGenerator Hackathon</h1>
+    <h4 style="color: yellow">&nbsp;11/15/2014 @FINRA MD Campus</h4>
+</div>
+
+<div class="bs-docs-section">
+    <h2 style="color: black;">Overview</h2>
+
+    <p/>
+
+    <p><a target="_blank" href="http://finraos.github.io/DataGenerator/">DataGenerator</a> 2.0 is
+        here. This version represents a 9-month, complete rewrite based on open standards and Big
+        Data scalability.
+        Join the <a target="_blank" href="http://finraos.github.io/DataGenerator/">DataGenerator</a>
+        team at our Hackathon to learn about the latest features and apply the tool to new and
+        interesting problems.
+        Cash prizes will be given to teams enhancing the tool in the most interesting and impactful
+        ways.
+    </p>
+
+    <p>Join us <b>Saturday, November 15th</b> for fun, free food, and a friendly competition.
+
+    Registration will close on <b>Friday, November 14th</b>.
+    </p>
+
+    <p>
+        <a href="#"
+           class="btn btn-warning btn-warning">Registration Closed</a></p>
+
+
+</div>
+
+
+
+<div class="bs-callout bs-callout-warning" style="border-left-color: Yellow;">
+    <h4 style="color: #336699">Winners</h4>
+
+    <table style="font-size: 12px">
+        <tr>
+            <td>GRAND PRIZE WINNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team HHACK <font size="1">(Michael Chao, Mauricio Silva, Uyen-Truc Nguyen, Han Xiao)</font></b></td>
+        </tr>
+        <tr>
+            <td>Best 'Big Data' solution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team PET <font size="1">(Daniel Koo, Timothy Marcinowski)</font></b></td>
+        </tr>
+        <tr>
+            <td>Best 'Performance Enhancement' implemented&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team TBD <font size="1">(Marshall Peters, Michael Thomas, Brendan Good, Anna Skorodumova)</font></b></td>
+        </tr>
+        <tr>
+            <td>Best 'Product Marketing or Monetizing' idea implementation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team PET <font size="1">(Daniel Koo, Timothy Marcinowski)</font></b></td>
+        </tr>
+        <tr>
+            <td>Best 'Code Quality' improvement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team HHACK <font size="1">(Michael Chao, Mauricio Silva, Uyen-Truc Nguyen, Han Xiao)</font></b></td>
+        </tr>
+        <tr>
+            <td>Best 'Practical Problem Solved' using the DataGenerator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>Team HHACK <font size="1">(Michael Chao, Mauricio Silva, Uyen-Truc Nguyen, Han Xiao)</font></b></td>
+        </tr>
+        <tr>
+            <td>Special Challenge Winner</td>
+            <td style="font-size: 16px"><b>Team Diversification Finder <font size="1">(Yuriy Yankop)</font></b></td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+<div class="bs-callout bs-callout-warning" style="border-left-color: #339933;">
+    <h4 style="color: #339933">Grand Prize</h4>
+
+    <p/>
+
+    <p style="font-size: 18px"><b>$1,024</b></p>
+
+    <h4 style="color: #339933"><br/>Themed Prizes</h4>
+
+    <p/>
+
+    <p style="font-size: 12px">
+    <table style="font-size: 12px">
+        <tr>
+            <td>Best 'Big Data' solution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>$256</b></td>
+        </tr>
+        <tr>
+            <td>Best 'Performance Enhancement' implemented&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>$256</b></td>
+        </tr>
+        <tr>
+            <td>Best 'Product Marketing or Monetizing' idea implementation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>$256</b></td>
+        </tr>
+        <tr>
+            <td>Best 'Code Quality' improvement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>$128</b></td>
+        </tr>
+        <tr>
+            <td>Best 'Practical Problem Solved' using the DataGenerator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b>$128</b></td>
+        </tr>
+        <tr>
+            <td>Plus a special individual challenge will be revealed on the day of the Hackathon where you can win a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="font-size: 16px"><b><a href="http://www.google.com/nexus/7/" target="_NEW">16GB 2013 Nexus 7"
+                tablet</a></b></td>
+        </tr>
+    </table>
+    </p>
+    <p>
+        Any single team can win all prizes totaling to <span style="font-size: 16px"><b>$2,048</b></span>
+    </p>
+
+    <h4 style="color: #339933"><br/>Bragging Rights</h4>
+
+    <p/>
+
+    <p style="font-size: 18px"><b>Priceless</b></p>
+
+
+</div>
+
+<div class="bs-callout bs-callout-info">
+    <h4>Venue & Schedule</h4>
+
+    <p/>
+
+    <p><b>Venue</b></p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>FINRA<br/>
+                9509 Key West Avenue<br/>
+                Decoverly Building<br/>
+                Rockville, MD 20850<br/>
+                <a href="https://www.google.com/maps/place/FINRA+Financial+Industry+Regulatory+Authority/@39.10764,-77.198543,17z/data=!3m1!4b1!4m2!3m1!1s0x89b632aa3f8a2a27:0x87d32c9b95366656"
+                   target="_NEW"><b>View Map</b></a></p>
+        </div>
+    </div>
+    <p/>
+
+    <p><b>Schedule</b></p>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table style="font-size: 12px">
+                <tr>
+                    <td width="150px"><b>8:30am - 9:00am </b></td>
+                    <td> Check-in</td>
+                </tr>
+                <tr style="color: forestgreen">
+                    <td width="150px"><b>8:30am </b></td>
+                    <td> Breakfast will be served</td>
+                </tr>
+                <tr>
+                    <td width="150px"><b>9:00am - 9:30am </b></td>
+                    <td> DataGenerator challenge presentation</td>
+                </tr>
+
+                <tr>
+                    <td width="150px"><b>9:30am - 10:30am </b></td>
+                    <td><br/><u>Team Formation</u>
+                        <br/>1. Introduce yourself as a professional. (1-2 minutes)
+                        <br/>2. Pitch your idea. Identify any skills needed from team members & any resources needed from the DataGenerator contributors team. (1-2 minutes)
+                        <br/>3. Recruit others to collectively work on the idea. (20 minutes)
+                        <br/><br/>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td width="150px"><b>10:30am - 11:30am </b></td>
+                    <td> Booth - Demo on building the DataGenerator [Optional 2 30 minute sessions]</td>
+                </tr>
+
+                <tr>
+                    <td width="150px"><b>10:30am - 11:30am </b></td>
+                    <td> Booth - Introduction to the DataGenerator [Optional 2 30 minute sessions]</td>
+                </tr>
+
+
+                <tr style="color: red">
+                    <td width="150px"><b>10:30am </b></td>
+                    <td> CODING BEGINS</td>
+                </tr>
+
+                <tr style="color: forestgreen">
+                    <td width="150px"><b>12:00 noon </b></td>
+                    <td> Lunch will be served</td>
+                </tr>
+
+                <tr style="color: forestgreen">
+                    <td width="150px"><b>6:00pm </b></td>
+                    <td> Dinner will be served</td>
+                </tr>
+
+                <tr style="color: red">
+                    <td width="150px"><b>10:00pm </b></td>
+                    <td> CODING ENDS</td>
+                </tr>
+
+                <tr>
+                    <td width="150px"><b>10:00pm - 11:30pm </b></td>
+                    <td> Solution presentations (10 minutes per team)</td>
+                </tr>
+
+                <tr>
+                    <td width="150px"><b>11:30pm - 12:00 midnight </b></td>
+                    <td> Awards presentation</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p/>
+
+    <p><b>Provided</b> :
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>Wi-Fi</p>
+
+            <p>Projectors and TV screens</p>
+
+            <p>Whiteboards and markers</p>
+
+            <p>Team breakout rooms with TVs and projectors</p>
+
+            <p>Breakfast, Lunch and Dinner. Unlimited snacks and drinks (soda, energy drinks and
+                coffee) </p>
+        </div>
+    </div>
+    <p><b>Bring the following</b> :
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>Laptops <b>(Required)</b></p>
+
+            <p>Your favorite keyboard, mouse, smartphones, headphones (Optional)</p>
+
+            <p>Your uber geek gear (Optional)</p>
+        </div>
+    </div>
+    </p>
+    <p><b>Prohibited</b> :
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>Alcoholic drinks</p>
+
+            <p>Hacking the FINRA guest Wifi or the network</p>
+        </div>
+    </div>
+    </p>
+    <p/>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Rules</h4>
+
+    <p/>
+
+    <p>1. Self-formed teams can be of any size. (Ideally less than 5 people per team)</p>
+
+    <p>2. Each team can work on one or more ideas.</p>
+
+    <p>3. An idea can be usability/performance/feature enhancements, new features, application of
+        DataGenerator to solve hard practical problems, ingenious ways to market and monetize it as
+        a product, improve the code quality, or something completely new. The goal is to be creative.</p>
+
+    <p>4. Each implemented idea will be scored using the following criteria:
+        <br/><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implementation 40%</b>
+        <br/><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creativity 50%</b>
+        <br/><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presentation 10%</b>
+        <br/><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weighted from 1-3 for the size of the idea implemented.</b>
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>NOTE: Un-implemented ideas will not be scored.</i>
+    </p>
+
+    <p>5. The <b>theme prize</b> winner will be the team with the best scored idea for a particular theme.</p>
+
+    <p>6. The <b>grand prize</b> winner will be the team with best idea across all ideas. There is a high likelihood that the grand prize winner will also be a theme prize winner. </p>
+
+</div>
+
+<div class="bs-callout bs-callout-warning" style="border-left-color: #336699;">
+    <h4 style="color: #336699">Judges</h4>
+
+    <p/>
+
+    <p><b>Mike Dillon</b> (VP Development Services) </p>
+
+    <p><b>Noah Egorin</b> (Senior Director - Product Management) </p>
+
+    <p><b>Beamlak Getachew</b> (Architect/Lead Developer) </p>
+
+    <p><b>Tim Griesbach</b> (Director - Technology) </p>
+
+    <p><b>Todd Griffiths</b> (Principal - Technology) </p>
+
+
+</div>
+
+<div class="bs-callout bs-callout-warning">
+    <h4>Sponsors</h4>
+    <table>
+        <tr><td height="12px"></td></tr>
+        <tr><td><a href="http://www.finra.org" target="_blank"><img src="./img/FINRA_Full_Logo.gif"/></a></td><td><p>Hosting and All Prizes</p></td></tr>
+        <tr><td><a href="http://www.ettaingroup.com/" target="_blank"><img src="./img/ettain.jpg" height="50%" width="50%"/></a></td><td><p>Food and Drinks</p></td></tr>
+    </table>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="hr1">
+
+<div class="container-fluid">
+    <div class="row row-offcanvas">
+        <div class="col-12">
+            <div class="f3 jumbotron">
+                <p>&copy; Copyright 2014 DataGenerator Contributors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--/.container-->
+
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
