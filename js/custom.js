@@ -96,3 +96,19 @@
 		});
 	
 })(jQuery);
+
+
+
+function toggleContent(idin, tagin) {
+    // Get the DOM reference
+    var contentId = document.getElementById(idin);
+    var tagId = document.getElementById(tagin);
+    // Toggle
+    if(contentId.style.display == "block") {
+        contentId.style.display = "none";
+        tagId.className="glyphicon glyphicon-chevron-right";
+    } else {
+        contentId.style.display = "block";
+        tagId.className="glyphicon glyphicon-chevron-down";
+    }
+}
