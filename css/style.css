@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 44px;
 }
 h2 {
 	font-size: 30px;
@@ -30,7 +30,7 @@ h4 {
 	font-size: 22px;
 }
 h5 {
-	font-size: 22px;
+	font-size: 26px;
 }
 h6 {
     font-family: 'Roboto', sans-serif;
@@ -281,8 +281,7 @@ a:focus {
 }
 
 .ec2 {
-	background: url('../img/home10.png') no-repeat;
-	background-size: cover;
+	background-color: #333;
 	height: auto;
 	background-position: left bottom;
 }
@@ -295,7 +294,8 @@ a:focus {
 	margin: 20px;
 	padding-top: 10px;
 	padding-bottom: 50px;
-	width: auto;
+	width: auto;	
+	text-align: center;
 }
 
 .ec4 {
