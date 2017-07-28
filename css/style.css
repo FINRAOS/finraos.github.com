@@ -17,6 +17,11 @@ body {
 	padding-left: 40px;
 }
 
+hr {
+background: #2b292a  no-repeat scroll center;
+height:.05em;
+}
+
 h1 {
 	font-size: 44px;
 }
